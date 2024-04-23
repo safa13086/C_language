@@ -1,7 +1,11 @@
 #include<stdio.h>
 void main(){
-	int user,mrp,qty,roti=5,paneer=20,biryani=50,rasgula=5;
+	int passwd,user,mrp,qty,roti=5,paneer=20,biryani=50,rasgula=5;
 	float tmrp;
+	printf("enter your password:");
+	scanf("%d",&passwd);
+	if (passwd==123){
+	
 	printf("------------MENU-------------\n1.roti=?5\n2.paneer=?20\n3.biryani=?50\n4.rasgula=?5\n");
 	printf("enter your item:");
 	scanf("%d",&user);
@@ -37,5 +41,10 @@ void main(){
 		default:
 			printf("error input");
     }
+    
+	}
+	else {
+		printf("you enter a wrong password!");
+	}
 		
 }
